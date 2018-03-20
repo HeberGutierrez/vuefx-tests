@@ -2,23 +2,10 @@
   <div id="app">
     <!--<img src="./assets/logo.png">-->
     <div class="wrap-banner">
-      <div class="main-title">
-        <h2>
-          Vue-Particles
-        </h2>
-        <p class="subtitle">
-          Vue.js component for particles backgrounds
-        </p>
-        <p class="subtitle">
-          SSR compatible
-        </p>
-        <br>
-        <a class="gh-button" target="_blank" href="https://github.com/creotip/vue-particles"><span class="gh-button__icon"></span>Download</a>
-      </div>
       <vue-particles
-        color="#ffffff"
+        color="#727477"
         :particleOpacity="0.7"
-        linesColor="#ffffff"
+        linesColor="#727477"
         :particlesNumber="80"
         shapeType="circle"
         :particleSize="5"
@@ -26,7 +13,7 @@
         :lineLinked="true"
         :lineOpacity="0.4"
         :linesDistance="150"
-        :moveSpeed="3"
+        :moveSpeed="4"
         :hoverEffect="true"
         hoverMode="grab"
         :clickEffect="true"
@@ -35,26 +22,24 @@
       </vue-particles>
 
     </div>
-    <main-content></main-content>
-    <foot></foot>
   </div>
 </template>
 
 <script>
-  import Foot from './components/Foot'
-  import MainContent from './components/Main'
-  export default {
-    name: 'app',
-    components: {
-      Foot,
-      MainContent
-    },
-    data () {
-      return {
-        msg: 'Welcome to Your Vue.js App'
-      }
+import Foot from './components/Foot'
+import MainContent from './components/Main'
+export default {
+  name: 'app',
+  components: {
+    Foot,
+    MainContent
+  },
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
     }
   }
+}
 </script>
 
 <style lang="scss">
@@ -145,11 +130,11 @@
   }
 
   .particles-js {
-    background-image: url("./assets/sky.jpg");
-    background-size: cover;
+    background-image: url("./assets/screenshot2.png");
+    background-size: contain;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: auto;
+    left: auto;
     width: 100%;
     height: 100%;
   }

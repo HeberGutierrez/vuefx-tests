@@ -20,7 +20,7 @@
   ></div>
 </template>
 <script>
-  /* eslint-disable */
+/* eslint-disable */
   export default {
     name: 'vue-particles',
     data: function () {
@@ -31,7 +31,7 @@
     props: {
       color: {
         type: String,
-        default: '#dedede'
+        default: '#db2727'
       },
       particleOpacity: {
         type: Number,
@@ -39,7 +39,7 @@
       },
       particlesNumber: {
         type: Number,
-        default: 80
+        default: 100
       },
       shapeType: {
         type: String,
@@ -51,7 +51,7 @@
       },
       linesColor: {
         type: String,
-        default: '#dedede'
+        default: '#db2727'
       },
       linesWidth: {
         type: Number,
